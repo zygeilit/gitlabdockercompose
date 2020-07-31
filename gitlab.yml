@@ -3,9 +3,9 @@ services:
   gitlab:
     image: gitlab/gitlab-ee:latest
     ports:
-      - "22:22"
-      - "80:80"
-      - "443:443"
+      - "8091:22"
+      - "8090:80"
+      - "8093:443"
     volumes:
       - $GITLAB_HOME/data:/var/opt/gitlab
       - $GITLAB_HOME/logs:/var/log/gitlab
